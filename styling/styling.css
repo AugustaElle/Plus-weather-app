@@ -1,0 +1,40 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    color: #93A8CB;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+h3 {
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+
+.app-wrapping {
+    max-width: 1000px;
+    border: 1px solid  #B1E1F7;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 20px;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);;
+}
+
+.present-day-temp {
+    text-align: left;
+    margin-top: 10px;
+}
