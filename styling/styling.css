@@ -10,31 +10,44 @@ h1{
 h2 {
     text-align: center;
     margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;    margin-top: 16px;
+
 }
 h3 {
     text-align: center;
+    font-size: 26px;
 }
 
-ul{
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+
+    font-size: 20px;
+    line-height: 26px;
     list-style: none;
     padding: 0;
 }
-li {
-    font-size: 20px;
-    line-height: 22px;
-}
 
-
-.app-wrapping {
+.weather-wrapping {
     max-width: 1000px;
     border: 1px solid  #B1E1F7;
-    border-radius: 10px;
     margin: 10px auto;
     padding: 20px;
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);;
 }
 
+
 .present-day-temp {
-    text-align: left;
-    margin-top: 10px;
+   display: inline;
+   font-size: 38px;
+   line-height: 1;
+   margin: 10px 10px 8px;
+   }
+
+.search-form {
+    margin: 10px;
 }
