@@ -17,19 +17,16 @@
     <div class="row">
      <div class="col-6">
          <h1 id="current-city"></h1>
-         <ul>
-             <li>Tuesday 9:00pm</li>
-             <li id="sky-description"></li>
-        </ul>
+         <h2 class="description" id="sky-description"></h2>
         <div class="clearfix">
-             <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="float-left">
+             <img src="#" alt="Sunny" class="float-left" id="weather-icon">
               <h2 class="present-day-temp float-left"> <span id="current-temperature"></span>°C</h2></div>
      </div>
      <div class="col-5">
          <ul>
-             <li>Feels Like: <span id="feels-like"> 30 </span> </li>
-             <li>Humidity: <span id="humidity"> 30 </span>%</li>  
-             <li>Wind: <span id="windspeed"> 30 </span> km/h</li>
+             <li>Feels Like: <span id="feels-like">  </span> </li>
+             <li>Humidity: <span id="humidity">  </span>%</li>  
+             <li>Wind: <span id="windspeed">  </span> km/h</li>
          </ul>
      </div>
      <div class="col-1"> <p>°C|°F</p></div>
@@ -48,7 +45,7 @@
         <div class="col">  <h2>Sunday</h2>
             <h3>24</h3></div>
     </div>
-    <form id="search-form">
+  <form id="search-form">
         <input type="text"
         placeholder="Enter city name"
         autocomplete="off"
@@ -57,6 +54,11 @@
         <input type="submit"
         value="Go!"/>
       </form>
+      <div class="row">
+        <div class="col">
+          <p>As of <span id="update-time"></span></p>
+        </div>
+        </div>  
     </div>
 <small>See my code on <a href="https://github.com/AugustaElle/Plus-weather-app">Github</a></small>
 </div>

@@ -32,6 +32,13 @@ li {
     padding: 0;
 }
 
+p {
+    margin-bottom: 0;
+    text-align: right;
+
+}
+
+
 .weather-wrapping {
     max-width: 1000px;
     border: 1px solid  #B1E1F7;
@@ -43,11 +50,19 @@ li {
 
 .present-day-temp {
    display: inline;
-   font-size: 38px;
+   font-size: 40px;
    line-height: 1;
    margin: 10px 10px 8px;
    }
 
 .search-form {
     margin: 10px;
+}
+
+
+#sky-description {
+    text-align: left;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 6px;
 }
