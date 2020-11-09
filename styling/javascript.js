@@ -11,6 +11,8 @@ function showTemp(temp) {
     let icon = document.querySelector("#weather-icon");
     let iconPicture = temp.data.weather[0].icon;
     icon.setAttribute("src", `http://openweathermap.org/img/wn/${iconPicture}@2x.png`);
+    
+    baseTemperature = Math.round(temp.data.main.temp);
 }
 
 function search(event) {
@@ -25,9 +27,25 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=me
 axios.get(apiUrl).then(showTemp);
 }
 
+let baseTemperature = null;
+
+function showCelsius (event) {
+    event.preventDefault();
+    document.querySelector("#current-temperature").innerHTML = Math.round(baseTemperature);
+}
 
 
+function showFarhenheit(event) {
+    event.preventDefault();
+    document.querySelector("#current-temperature").innerHTML = Math.round(baseTemperature * 1.8 +32);
 
+
+}
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
+let farhenheitConversion = document.querySelector("#convert-farhenheit")
+farhenheitConversion.addEventListener("click", showFarhenheit)
+
+let celsiusConversion = document.querySelector("#convert-celsius")
+celsiusConversion.addEventListener("click", showCelsius)
