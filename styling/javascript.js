@@ -1,6 +1,7 @@
 
 
 function showTemp(temp) {
+    console.log(temp);
     document.querySelector("#current-city").innerHTML = temp.data.name;
     document.querySelector("#current-temperature").innerHTML = Math.round(temp.data.main.temp);
     document.querySelector("#feels-like").innerHTML = Math.round(temp.data.main.feels_like);
@@ -64,7 +65,7 @@ let days = [
 let day = days[updateTime.getDay()];
 let hours = updateTime.getHours();
 let minutes = updateTime.getMinutes();
-let months = ["Jan", "Feb", "Mar", "Apr", "May", "Ju", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 let month = months[updateTime.getMonth()];
 let date = updateTime.getDate();
 
