@@ -64,7 +64,13 @@ let days = [
 ];
 let day = days[updateTime.getDay()];
 let hours = updateTime.getHours();
+if (hours < 10) {
+    hours = `0${hours}`;
+}
 let minutes = updateTime.getMinutes();
+if (minutes < 10) {
+    minutes = `0${minutes}`;
+}
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 let month = months[updateTime.getMonth()];
 let date = updateTime.getDate();
