@@ -13,8 +13,21 @@ function showTemp(temp) {
     icon.setAttribute("src", `http://openweathermap.org/img/wn/${iconPicture}@2x.png`);
 }
 
+function search(event) {
+    event.preventDefault();
+
 let apiKey = "9bcab27e2586a82d6ff0a45c0b3f6c89";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lisbon&units=metric&appid=${apiKey}`;
+let newCity = document.querySelector("#entered-city");
+let city = newCity.value
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 
 axios.get(apiUrl).then(showTemp);
+}
+
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
+
