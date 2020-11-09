@@ -49,3 +49,23 @@ farhenheitConversion.addEventListener("click", showFarhenheit)
 
 let celsiusConversion = document.querySelector("#convert-celsius")
 celsiusConversion.addEventListener("click", showCelsius)
+
+let updateTime = new Date();
+
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+let day = days[updateTime.getDay()];
+let hours = updateTime.getHours();
+let minutes = updateTime.getMinutes();
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Ju", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+let month = months[updateTime.getMonth()];
+let date = updateTime.getDate();
+
+document.querySelector("#update-time").innerHTML = `${day} ${month} ${date} at ${hours}:${minutes}`;
